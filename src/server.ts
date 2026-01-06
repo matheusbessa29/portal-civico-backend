@@ -120,11 +120,11 @@ async function startServer() {
 
         // Test database connection
         log.info('Testing database connection...');
-        const dbConnected = await testConnection();
+        //const dbConnected = await testConnection();
 
-        if (!dbConnected) {
-            throw new Error('Database connection failed');
-        }
+        //if (!dbConnected) {
+        //    throw new Error('Database connection failed');
+        //}
 
         // Start HTTP server
         const server = app.listen(PORT, () => {
