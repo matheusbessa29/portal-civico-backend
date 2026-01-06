@@ -288,5 +288,14 @@ MIT License - veja [LICENSE](LICENSE) para detalhes
 
 ---
 
-**Versão:** 0.1.0  
+## 📖 Documentação Detalhada
+
+Para informações técnicas mais aprofundadas, consulte a pasta `docs/`:
+
+- **[Viabilidade Técnica](./docs/viabilidade-tecnica.md)** - Validação completa das fontes de dados oficiais de Santos/SP, URLs testadas, estrutura de coleta e riscos identificados
+- **[Roadmap Detalhado](./docs/roadmap.md)** - Planejamento completo de 14 semanas dividido em fases, sprints e marcos de validação
+
+---
+
+**Versão:** 0.1.0
 **Status:** Em desenvolvimento ativo 🚧

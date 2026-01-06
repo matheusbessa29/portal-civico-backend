@@ -59,7 +59,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // ========================================
 
 // Health check
-app.get('/health', (req: Request, res: Response) => {
+app.get('/health', (_req: Request, res: Response) => {
     res.json({
         status: 'ok',
         timestamp: new Date().toISOString(),
@@ -69,7 +69,7 @@ app.get('/health', (req: Request, res: Response) => {
 });
 
 // Root endpoint
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (_req: Request, res: Response) => {
     res.json({
         message: 'Portal Cívico API',
         version: '0.1.0',
@@ -95,7 +95,7 @@ app.use((req: Request, res: Response) => {
 });
 
 // Error handler
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, req: Request, res: Response, _next: NextFunction) => {
     log.error('Unhandled error', err, {
         method: req.method,
         path: req.path,
